@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Spell",
+        "properties": [
+            {
+                "value": "Placeholder text",
+                "name": "Text",
+                "$type": "CCGKit.StringProperty"
+            },
+            {
+                "value": "Spell",
+                "name": "Picture",
+                "$type": "CCGKit.StringProperty"
+            },
+            {
+                "value": 3,
+                "name": "MaxCopies",
+                "$type": "CCGKit.IntProperty"
+            },
+            {
+                "value": null,
+                "name": "Material",
+                "$type": "CCGKit.StringProperty"
+            }
+        ],
+        "stats": [],
+        "destroyConditions": [],
+        "moveAfterTriggeringEffect": true,
+        "zoneId": 3,
+        "id": 1
+    }
+]

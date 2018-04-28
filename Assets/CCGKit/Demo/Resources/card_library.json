@@ -1,0 +1,3051 @@
+[
+    {
+        "name": "Weapon",
+        "cards": [
+            {
+                "cardTypeId": 1,
+                "name": "ARCHER",
+                "costs": [
+                    {
+                        "statId": 5,
+                        "value": 1,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK 2",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Archer",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+x cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 2,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-2 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 2,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 2,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 2,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-2 def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 2,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 2,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 0
+            },
+            {
+                "cardTypeId": 1,
+                "name": "FIRE ARCHER",
+                "costs": [
+                    {
+                        "statId": 5,
+                        "value": 3,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK 5",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "FireArcher",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+x cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 5,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-5 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 5,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 5,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 5,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-5 def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 5,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 5,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 1
+            },
+            {
+                "cardTypeId": 1,
+                "name": "BOMB",
+                "costs": [
+                    {
+                        "statId": 5,
+                        "value": 14,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK 18",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Bomb",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+x cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 18,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-18 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 18,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 18,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 18,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-18def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 18,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 18,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 2
+            },
+            {
+                "cardTypeId": 1,
+                "name": "CANNON",
+                "costs": [
+                    {
+                        "statId": 5,
+                        "value": 16,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK 20",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Cannon",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+x cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 20,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-20 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 20,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 20,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 20,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-20 def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 20,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 20,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 3
+            },
+            {
+                "cardTypeId": 1,
+                "name": "PLATOON",
+                "costs": [
+                    {
+                        "statId": 5,
+                        "value": 7,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK 9",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Platoon",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+x cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 9,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-9 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 9,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 9,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 9,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-9 def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 9,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 9,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 4
+            },
+            {
+                "cardTypeId": 1,
+                "name": "AMBUSH",
+                "costs": [
+                    {
+                        "statId": 5,
+                        "value": 20,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK CASTLE 15",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Ambush",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-15 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 15,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 5
+            },
+            {
+                "cardTypeId": 1,
+                "name": "KNIGHT",
+                "costs": [
+                    {
+                        "statId": 5,
+                        "value": 10,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK 10",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Knight",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+x cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 10,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-10 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 10,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 10,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 10,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-10 def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 10,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 10,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 6
+            },
+            {
+                "cardTypeId": 1,
+                "name": "RECRUIT",
+                "costs": [
+                    {
+                        "statId": 5,
+                        "value": 8,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ADD 1 BLACKSMITH",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Recruit",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+1 soldier",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 4,
+                            "value": {
+                                "constant": 1,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 7
+            },
+            {
+                "cardTypeId": 1,
+                "name": "GUARDS",
+                "costs": [
+                    {
+                        "statId": 5,
+                        "value": 7,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "DEFENSE 12",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Guards",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+12 defense",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 12,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 8
+            }
+        ]
+    },
+    {
+        "name": "Crystal",
+        "cards": [
+            {
+                "cardTypeId": 1,
+                "name": "MAGE",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 8,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ADD 1 MAGE",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Mage",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+1 magic",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 6,
+                            "value": {
+                                "constant": 1,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 9
+            },
+            {
+                "cardTypeId": 1,
+                "name": "LIGHTNING",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 20,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK 22",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Lightning",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+x cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 22,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-22 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 22,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 22,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 22,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-22 def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 22,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 22,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 10
+            },
+            {
+                "cardTypeId": 1,
+                "name": "QUAKE",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 24,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK 27",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Quake",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+x cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 27,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-27 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 27,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 27,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 27,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-27 def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 27,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 27,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 11
+            },
+            {
+                "cardTypeId": 1,
+                "name": "PIXIES",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 18,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "CASTLE +22",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Pixies",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+22 castle",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 22,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 12
+            },
+            {
+                "cardTypeId": 1,
+                "name": "MAGIC WALL",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 14,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "DEFENSE +20",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "MagicWall",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+20 defense",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 20,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 13
+            },
+            {
+                "cardTypeId": 1,
+                "name": "ADD WEAPONS",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 5,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ADD 8 WEAPONS",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "AddWeapons",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+8 weapon",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 5,
+                            "value": {
+                                "constant": 8,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 14
+            },
+            {
+                "cardTypeId": 1,
+                "name": "ADD BRICKS",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 5,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ADD 8 BRICKS",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "AddBricks",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+8 brick",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 3,
+                            "value": {
+                                "constant": 8,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 15
+            },
+            {
+                "cardTypeId": 1,
+                "name": "ADD CRYSTALS",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 5,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ADD 8 CRYSTALS",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "AddCrystals",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+8 crystal",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 7,
+                            "value": {
+                                "constant": 8,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 16
+            },
+            {
+                "cardTypeId": 1,
+                "name": "REMOVE WEAPONS",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 5,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "OPPONENT WEAPONS -8",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "RemoveWeapons",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-8 weapon",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 5,
+                            "value": {
+                                "constant": 8,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 5,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 8,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x weapon",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 5,
+                            "value": {
+                                "statId": 5,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 5,
+                                    "op": "LessThan",
+                                    "value": 8,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 17
+            },
+            {
+                "cardTypeId": 1,
+                "name": "REMOVE BRICKS",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 5,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "OPPONENT BRICKS -8",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "RemoveBricks",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-8 brick",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 3,
+                            "value": {
+                                "constant": 8,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 3,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 8,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x brick",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 3,
+                            "value": {
+                                "statId": 3,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 3,
+                                    "op": "LessThan",
+                                    "value": 8,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 18
+            },
+            {
+                "cardTypeId": 1,
+                "name": "REMOVE CRYSTALS",
+                "costs": [
+                    {
+                        "statId": 7,
+                        "value": 5,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "OPPONENT CRYSTALS -8",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "RemoveCrystals",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-8 crystal",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 7,
+                            "value": {
+                                "constant": 8,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 7,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 8,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x crystal",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 7,
+                            "value": {
+                                "statId": 7,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 7,
+                                    "op": "LessThan",
+                                    "value": 8,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 19
+            }
+        ]
+    },
+    {
+        "name": "Brick",
+        "cards": [
+            {
+                "cardTypeId": 1,
+                "name": "BUILDER",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 8,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ADD 1 BUILDER",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Builder",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+1 worker",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 2,
+                            "value": {
+                                "constant": 1,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 20
+            },
+            {
+                "cardTypeId": 1,
+                "name": "TOWER",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 10,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "CASTLE +10",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Tower",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+10 castle",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 10,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 21
+            },
+            {
+                "cardTypeId": 1,
+                "name": "TAVERN",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 12,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "CASTLE +15",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Tavern",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+15 castle",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 15,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 22
+            },
+            {
+                "cardTypeId": 1,
+                "name": "HOUSE",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 5,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "CASTLE +5",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "House",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+5 castle",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 5,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 23
+            },
+            {
+                "cardTypeId": 1,
+                "name": "BABYLON",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 25,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "CASTLE +30",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Babylon",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+30 castle",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 30,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 24
+            },
+            {
+                "cardTypeId": 1,
+                "name": "WALL",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 4,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "DEFENSE +6",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Wall",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+6 defense",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 6,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 25
+            },
+            {
+                "cardTypeId": 1,
+                "name": "SCHOOL",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 20,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ADD 1 BUILDER, 1 BLACKSMITH, AND 1 MAGE",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "School",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+1 worker",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 2,
+                            "value": {
+                                "constant": 1,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+1 soldier",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 4,
+                            "value": {
+                                "constant": 1,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+1 magic",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 6,
+                            "value": {
+                                "constant": 1,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 26
+            },
+            {
+                "cardTypeId": 1,
+                "name": "FENCE",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 5,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "DEFENSE+9",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Fence",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+9 defense",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 9,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 27
+            },
+            {
+                "cardTypeId": 1,
+                "name": "CATAPULT",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 10,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK 12",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Catapult",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+x cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 12,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-12 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 12,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 12,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 12,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-12 def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 12,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 12,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 28
+            },
+            {
+                "cardTypeId": 1,
+                "name": "BATTERING RAM",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 7,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "ATTACK 9",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "BatteringRam",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+x cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 9,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-9 cas",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 9,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 9,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-x def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "statId": 1,
+                                "$type": "CCGKit.PlayerStatValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "LessThan",
+                                    "value": 9,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-9 def",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 9,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [
+                                {
+                                    "statId": 1,
+                                    "op": "GreaterThanOrEqualTo",
+                                    "value": 9,
+                                    "$type": "CCGKit.PlayerStatCondition"
+                                }
+                            ],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 29
+            },
+            {
+                "cardTypeId": 1,
+                "name": "WAIN",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 10,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "*STEAL* 8 CASTLE",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "Wain",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+8 castle",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 8,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    },
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "-8 castle",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 0,
+                            "value": {
+                                "constant": 8,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.DecreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.OpponentTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 30
+            },
+            {
+                "cardTypeId": 1,
+                "name": "LARGE WALL",
+                "costs": [
+                    {
+                        "statId": 3,
+                        "value": 14,
+                        "$type": "CCGKit.PayResourceCost"
+                    }
+                ],
+                "properties": [
+                    {
+                        "value": "DEFENSE +20",
+                        "name": "Text",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": "LargeWall",
+                        "name": "Picture",
+                        "$type": "CCGKit.StringProperty"
+                    },
+                    {
+                        "value": 3,
+                        "name": "MaxCopies",
+                        "$type": "CCGKit.IntProperty"
+                    },
+                    {
+                        "value": null,
+                        "name": "Material",
+                        "$type": "CCGKit.StringProperty"
+                    }
+                ],
+                "stats": [],
+                "keywords": [],
+                "abilities": [
+                    {
+                        "trigger": {
+                            "zoneId": 1,
+                            "$type": "CCGKit.OnCardLeftZoneTrigger"
+                        },
+                        "name": "+20 defense",
+                        "type": "Triggered",
+                        "effect": {
+                            "statId": 1,
+                            "value": {
+                                "constant": 20,
+                                "$type": "CCGKit.ConstantValue"
+                            },
+                            "duration": 0,
+                            "$type": "CCGKit.IncreasePlayerStatEffect"
+                        },
+                        "target": {
+                            "conditions": [],
+                            "$type": "CCGKit.PlayerTarget"
+                        },
+                        "$type": "CCGKit.TriggeredAbility"
+                    }
+                ],
+                "id": 31
+            }
+        ]
+    }
+]

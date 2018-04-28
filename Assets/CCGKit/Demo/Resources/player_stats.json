@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Castle",
+        "baseValue": 30,
+        "originalValue": 30,
+        "minValue": 0,
+        "maxValue": 100,
+        "id": 0,
+        "$type": "CCGKit.PlayerStat"
+    },
+    {
+        "name": "Defense",
+        "baseValue": 10,
+        "originalValue": 10,
+        "minValue": 0,
+        "maxValue": 50,
+        "id": 1,
+        "$type": "CCGKit.PlayerStat"
+    },
+    {
+        "name": "Workers",
+        "baseValue": 3,
+        "originalValue": 3,
+        "minValue": 0,
+        "maxValue": 10,
+        "id": 2,
+        "$type": "CCGKit.PlayerStat"
+    },
+    {
+        "name": "Bricks",
+        "baseValue": 5,
+        "originalValue": 5,
+        "minValue": 0,
+        "maxValue": 100,
+        "id": 3,
+        "$type": "CCGKit.PlayerStat"
+    },
+    {
+        "name": "Soldiers",
+        "baseValue": 3,
+        "originalValue": 3,
+        "minValue": 0,
+        "maxValue": 10,
+        "id": 4,
+        "$type": "CCGKit.PlayerStat"
+    },
+    {
+        "name": "Weapons",
+        "baseValue": 5,
+        "originalValue": 5,
+        "minValue": 0,
+        "maxValue": 100,
+        "id": 5,
+        "$type": "CCGKit.PlayerStat"
+    },
+    {
+        "name": "Magic",
+        "baseValue": 3,
+        "originalValue": 3,
+        "minValue": 0,
+        "maxValue": 10,
+        "id": 6,
+        "$type": "CCGKit.PlayerStat"
+    },
+    {
+        "name": "Crystals",
+        "baseValue": 5,
+        "originalValue": 5,
+        "minValue": 0,
+        "maxValue": 100,
+        "id": 7,
+        "$type": "CCGKit.PlayerStat"
+    },
+    {
+        "name": "GenHP",
+        "baseValue": 40,
+        "originalValue": 40,
+        "minValue": 0,
+        "maxValue": 150,
+        "id": 8,
+        "$type": "CCGKit.PlayerStat"
+    }
+]
